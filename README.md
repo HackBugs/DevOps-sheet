@@ -20,18 +20,18 @@ wsl --system
   - docker version
   - docker search ubuntu - can use image name to know more about like
   - docker search nodejs
-
+  - ----------------------------------------------------------
   - docker image -to this cmd can see all image which you pulled
-
+  - ----------------------------------------------------------
   - docker pull okteto/hello-world
   - docker run --hello-world
-
+  - ----------------------------------------------------------
   - docker pull ubuntu
   - docker run -it ubuntu
   - docker run -it nginx
   - docker run -d -p 80:80 nginx
   - docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw mysql
-    
+  - ----------------------------------------------------------
   - app.py
   - print("Hello from Docker container!")
 
