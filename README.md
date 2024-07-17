@@ -606,7 +606,31 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-### Steps to Install and Use DevOps Tools inside Docker on Ubuntu:
+# - Steps to Install and Use DevOps Tools inside Docker on Ubuntu:
+
+- Vi Dockerfile - inside this file Paste this script
+```sh
+# Use an official Node.js runtime as a parent image
+FROM node:14
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose the port on which the app runs
+EXPOSE 3000
+
+# Command to run the application
+CMD ["node", "index.js"]
+```
 
 1. **Programming Language Runtime (Node.js Example)**:
    - **Dockerfile Creation**: Node.js runtime ke liye ek Dockerfile create karein jaise maine pehle bataya tha. Dockerfile mein Node.js ko base image ke roop mein use karte hue apne application ke dependencies aur runtime environment ko setup karein.
