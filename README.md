@@ -32,7 +32,7 @@ wsl --system
   - docker run -d -p 80:80 nginx
   - docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw mysql
   - 
-  - # app.py
+  - app.py
   - print("Hello from Docker container!")
 
   - docker stop <container_id>
