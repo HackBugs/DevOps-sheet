@@ -111,16 +111,20 @@ apt-get install nano
 
 --------------------------------------------------
 
-# DevOps tools        
-  docker  
-  git 
+# DevOps tools 
+  Linux
+  git
+  docker   
   kubernetes  
   jenkins   
   terraform 
   ansible 
+  prometheus
+  grafana
   helm  
   nginx 
-  webhook 
+  webhook
+  
 
 # AWS tools
   EC2
@@ -225,6 +229,107 @@ Bilkul, chalo hum step-by-step in sab tools ko samjhte hain aur unka setup aur a
   ```
 - **Setup kaise kare?**: Ansible playbook likho jo tasks ko define karta hai aur `ansible-playbook` command use karo.
 - **Automate kaise kare?**: Jenkins pipeline mein ansible-playbook command add kar sakte ho.
+
+  ### Prometheus
+
+**Prometheus** ek open-source monitoring aur alerting toolkit hai jo metrics collection, storage, visualization, aur alerting ke liye use hota hai. Yeh primarily cloud-native environments aur microservices monitoring ke liye design kiya gaya hai.
+
+#### Real-Life Example:
+
+Imagine aap ek large scale web application operate kar rahe hain. Aapko performance metrics, server health, aur application ki overall stability monitor karna hai. Is scenario mein Prometheus ka use hota hai:
+
+- **Metrics Collection**: Prometheus se aap apne servers, applications, databases, aur infrastructure components se metrics collect kar sakte hain.
+- **Alerting**: Agar koi metric predefined threshold se upar ya niche jaata hai, to Prometheus alert generate karta hai.
+- **Visualization**: Metrics ko visualize karke trends analyze kar sakte hain.
+
+### Prometheus Install on Ubuntu:
+
+Prometheus ko Ubuntu par install karne ke liye, aap niche diye gaye steps follow kar sakte hain:
+
+1. **Download Prometheus**:
+
+   ```bash
+   wget https://github.com/prometheus/prometheus/releases/download/v2.34.0/prometheus-2.34.0.linux-amd64.tar.gz
+   ```
+
+2. **Extract the tarball**:
+
+   ```bash
+   tar -xvzf prometheus-2.34.0.linux-amd64.tar.gz
+   ```
+
+3. **Navigate into the extracted directory**:
+
+   ```bash
+   cd prometheus-2.34.0.linux-amd64
+   ```
+
+4. **Run Prometheus**:
+
+   ```bash
+   ./prometheus --config.file=prometheus.yml
+   ```
+
+   Yeh command Prometheus server ko start karega default configuration file `prometheus.yml` ke saath.
+
+### Grafana
+
+**Grafana** ek open-source analytics aur monitoring platform hai jo data ko visualize karne ke liye use hota hai. Yeh versatile dashboarding tool hai jo different data sources se data ko visualize karne mein help karta hai.
+
+#### Real-Life Example:
+
+Aap apne Prometheus se collect kiye gaye metrics ko visualize aur analyze karne ke liye Grafana ka use kar sakte hain:
+
+- **Dashboard Creation**: Grafana se aap custom dashboards create kar sakte hain jismein charts, graphs, aur tables display ho.
+- **Alerting**: Grafana aapko alerts set karne aur visualize metrics ke basis par actionable insights provide karne mein help karta hai.
+- **Data Integration**: Multiple data sources jaise Prometheus, MySQL, AWS CloudWatch, etc., se data fetch karke Grafana mein visualize kar sakte hain.
+
+### Grafana Install on Ubuntu:
+
+Grafana ko Ubuntu par install karne ke liye, niche diye gaye steps follow karein:
+
+1. **Add Grafana repository**:
+
+   ```bash
+   sudo apt-get install -y software-properties-common
+   sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+   ```
+
+2. **Add Grafana GPG key**:
+
+   ```bash
+   wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+   ```
+
+3. **Update apt packages**:
+
+   ```bash
+   sudo apt-get update
+   ```
+
+4. **Install Grafana**:
+
+   ```bash
+   sudo apt-get install grafana
+   ```
+
+5. **Start Grafana service**:
+
+   ```bash
+   sudo systemctl start grafana-server
+   ```
+
+6. **Access Grafana**:
+
+   Open a web browser and go to `http://localhost:3000` to access Grafana. Default credentials are `admin/admin`.
+
+### Use Cases:
+
+- **Infrastructure Monitoring**: Server metrics, resource usage, aur performance monitoring.
+- **Application Monitoring**: Application metrics, response times, aur error rates.
+- **Business Analytics**: Sales data, customer analytics, aur operational metrics.
+
+Prometheus aur Grafana ka combination aapko real-time monitoring, performance analysis, aur proactive troubleshooting mein help karta hai. Agar aur kuch clarification ya details chahiye ho to bataiye!
 
 #### Helm
 - **Kya hai?**: Helm ek package manager hai Kubernetes ke liye jo applications ko deploy karne mein madad karta hai.
