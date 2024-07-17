@@ -592,4 +592,78 @@ Prometheus aur Grafana ka combination aapko real-time monitoring, performance an
       app.run(port=5000)
   ```
 
-In sab tools ko automate karne ke liye aap scripting languages jaise Bash YAML aur Python use kar sakte ho. Jenkins aur Terraform jaise tools ka apna configuration language hota hai jo aap use kar sakte ho.
+In sab tools ko automate karne ke liye aap scripting languages jaise Bash YAML aur Python use kar sakte ho. 
+
+----------------------------------------------------------------
+
+Ab jab aapne Docker ko apne Ubuntu machine pe successfully install kar liya hai aur Docker service bhi start kar diya hai, to aap DevOps ke various tools ko Docker containers mein install aur use karne ke liye tayyar hain. Niche diye gaye steps follow karen:
+
+```sh
+sudo apt-get update
+sudo apt-get install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
+### Steps to Install and Use DevOps Tools inside Docker on Ubuntu:
+
+1. **Programming Language Runtime (Node.js Example)**:
+   - **Dockerfile Creation**: Node.js runtime ke liye ek Dockerfile create karein jaise maine pehle bataya tha. Dockerfile mein Node.js ko base image ke roop mein use karte hue apne application ke dependencies aur runtime environment ko setup karein.
+   - **Build and Run Docker Image**: Dockerfile ko build karein aur image ko run karein, jaise:
+     ```bash
+     cd /path/to/your/nodejs-app
+     docker build -t my-nodejs-app .
+     docker run -d -p 3000:3000 my-nodejs-app
+     ```
+
+2. **Database Client (MySQL Client Example)**:
+   - **Dockerfile Creation**: MySQL client ke liye ek Dockerfile create karein jaise maine pehle bataya. Dockerfile mein MySQL client ko install karein.
+   - **Build and Run Docker Image**: Dockerfile ko build karein aur image ko run karein, jaise:
+     ```bash
+     cd /path/to/your/mysql-client-app
+     docker build -t mysql-client .
+     docker run -it --network=host mysql-client mysql -h your-mysql-host -u root -p
+     ```
+
+3. **Web Server (Nginx Example)**:
+   - **Dockerfile Creation**: Nginx server ke liye ek Dockerfile create karein jaise maine pehle bataya. Dockerfile mein Nginx server ko setup karein.
+   - **Build and Run Docker Image**: Dockerfile ko build karein aur image ko run karein, jaise:
+     ```bash
+     cd /path/to/your/nginx-server-app
+     docker build -t my-nginx-server .
+     docker run -d -p 80:80 my-nginx-server
+     ```
+
+4. **Version Control (Git Example)**:
+   - **Dockerfile Creation**: Git ko Docker container mein install karne ke liye Dockerfile mein appropriate commands add karein.
+   - **Build and Run Docker Image**: Dockerfile ko build karein aur image ko run karein.
+
+5. **CI/CD Tools (Jenkins Example)**:
+   - **Dockerfile Creation**: Jenkins server ke liye ek Dockerfile create karein jaise maine pehle bataya. Dockerfile mein Jenkins server ko setup karein.
+   - **Build and Run Docker Image**: Dockerfile ko build karein aur image ko run karein, jaise:
+     ```bash
+     cd /path/to/your/jenkins-server-app
+     docker build -t my-jenkins-server .
+     docker run -d -p 8080:8080 -p 50000:50000 my-jenkins-server
+     ```
+
+6. **Monitoring and Logging (Prometheus Example)**:
+   - **Dockerfile Creation**: Prometheus ke liye ek Dockerfile create karein jaise maine pehle bataya. Dockerfile mein Prometheus ko setup karein.
+   - **Build and Run Docker Image**: Dockerfile ko build karein aur image ko run karein, jaise:
+     ```bash
+     cd /path/to/your/prometheus-app
+     docker build -t my-prometheus-server .
+     docker run -d -p 9090:9090 my-prometheus-server
+     ```
+
+7. **Configuration Management (Ansible Example)**:
+   - **Dockerfile Creation**: Ansible client ke liye ek Dockerfile create karein jaise maine pehle bataya. Dockerfile mein Ansible ko setup karein.
+   - **Build and Run Docker Image**: Dockerfile ko build karein aur image ko run karein, jaise:
+     ```bash
+     cd /path/to/your/ansible-client-app
+     docker build -t ansible-client .
+     docker run -it ansible-client bash
+     ```
+
+### Conclusion:
+Har DevOps tool ko Docker containers mein install karne ke liye aapko unke specific Dockerfiles create karna hoga aur fir un Dockerfiles ko build karke images ko run karna hoga. Docker containers use karke aap apne development environment ko isolated aur portable bana sakte hain, jo flexibility aur consistency provide karta hai across different environments.
