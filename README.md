@@ -325,4 +325,166 @@ Bilkul, chalo hum step-by-step in sab tools ko samjhte hain aur unka setup aur a
 - **Setup kaise kare?**: Minikube ya kubeadm se local clusters create karo.
 - **Automate kaise kare?**: Helm charts use karke deployments automate kar sakte ho.
 
-Agar koi tool chhut gaya ho ya aur detail mein samjhna ho, to bata dena!
+----------------------------------------------------------------
+
+- #### **In sab tools ko automate karne ke liye aap scripting languages jaise Bash YAML aur Python use kar sakte ho**
+
+### Docker
+- **Language for Automation**: Shell scripting (Bash), Python
+- **Automation Example**: Dockerfile ka use karke application container create kar sakte ho.
+  ```Dockerfile
+  # Dockerfile example
+  FROM python:3.8-slim-buster
+  WORKDIR /app
+  COPY . .
+  RUN pip install -r requirements.txt
+  CMD ["python", "app.py"]
+  ```
+
+### Git
+- **Language for Automation**: Shell scripting (Bash), Python
+- **Automation Example**: Git hooks ka use karke automation scripts likh sakte ho, jaise pre-commit hooks.
+  ```sh
+  # pre-commit hook script example
+  # .git/hooks/pre-commit
+  #!/bin/sh
+  echo "Running pre-commit hook"
+  pylint my_project/
+  ```
+
+### Kubernetes
+- **Language for Automation**: YAML, Shell scripting (Bash), Python
+- **Automation Example**: Kubernetes manifest files likh kar resources create kar sakte ho.
+  ```yaml
+  # Deployment YAML file example
+  apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: nginx-deployment
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        app: nginx
+    template:
+      metadata:
+        labels:
+          app: nginx
+      spec:
+        containers:
+        - name: nginx
+          image: nginx:1.14.2
+          ports:
+          - containerPort: 80
+  ```
+
+### Jenkins
+- **Language for Automation**: Groovy (Jenkinsfile), Shell scripting (Bash)
+- **Automation Example**: Jenkinsfile likh kar CI/CD pipelines create kar sakte ho.
+  ```groovy
+  // Jenkinsfile example
+  pipeline {
+      agent any
+      stages {
+          stage('Build') {
+              steps {
+                  echo 'Building...'
+                  sh 'make build'
+              }
+          }
+          stage('Test') {
+              steps {
+                  echo 'Testing...'
+                  sh 'make test'
+              }
+          }
+          stage('Deploy') {
+              steps {
+                  echo 'Deploying...'
+                  sh 'make deploy'
+              }
+          }
+      }
+  }
+  ```
+
+### Terraform
+- **Language for Automation**: HashiCorp Configuration Language (HCL)
+- **Automation Example**: Terraform configuration files likh kar infrastructure define kar sakte ho.
+  ```hcl
+  # Terraform configuration example
+  provider "aws" {
+    region = "us-west-2"
+  }
+
+  resource "aws_instance" "example" {
+    ami           = "ami-0c55b159cbfafe1f0"
+    instance_type = "t2.micro"
+  }
+  ```
+
+### Ansible
+- **Language for Automation**: YAML
+- **Automation Example**: Ansible playbooks likh kar automation tasks define kar sakte ho.
+  ```yaml
+  # Ansible playbook example
+  - hosts: servers
+    tasks:
+      - name: Install nginx
+        apt:
+          name: nginx
+          state: present
+  ```
+
+### Helm
+- **Language for Automation**: YAML
+- **Automation Example**: Helm charts likh kar Kubernetes applications package aur deploy kar sakte ho.
+  ```yaml
+  # Helm chart values.yaml example
+  replicaCount: 3
+  image:
+    repository: nginx
+    tag: stable
+  service:
+    type: ClusterIP
+    port: 80
+  ```
+
+### Nginx
+- **Language for Automation**: Shell scripting (Bash), Python, YAML (for configuration management tools)
+- **Automation Example**: Ansible playbook ka use karke Nginx install aur configure kar sakte ho.
+  ```yaml
+  # Ansible playbook to install Nginx
+  - hosts: webservers
+    tasks:
+      - name: Ensure Nginx is installed
+        apt:
+          name: nginx
+          state: present
+      - name: Start Nginx service
+        service:
+          name: nginx
+          state: started
+          enabled: yes
+  ```
+
+### Webhook
+- **Language for Automation**: Python, Shell scripting (Bash)
+- **Automation Example**: Webhook server likh sakte ho jo GitHub webhook events handle kare.
+  ```python
+  # Simple Python webhook server example using Flask
+  from flask import Flask, request
+
+  app = Flask(__name__)
+
+  @app.route('/webhook', methods=['POST'])
+  def handle_webhook():
+      data = request.json
+      print(f"Received webhook event: {data}")
+      return '', 200
+
+  if __name__ == '__main__':
+      app.run(port=5000)
+  ```
+
+In sab tools ko automate karne ke liye aap scripting languages jaise Bash YAML aur Python use kar sakte ho. Jenkins aur Terraform jaise tools ka apna configuration language hota hai jo aap use kar sakte ho.
