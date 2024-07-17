@@ -10,6 +10,13 @@
 - wsl --shutdown
 - wsl --system
 
+```sh
+sudo apt-get update
+sudo apt-get install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
 - Docker - Docker-Daemon
   - Docker images ubuntu, nginx, mysql, nodejs, oraclelinex, 
   - Docker --help
