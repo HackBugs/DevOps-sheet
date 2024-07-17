@@ -141,7 +141,7 @@ apt-get install nano
 
 Bilkul, chalo hum step-by-step in sab tools ko samjhte hain aur unka setup aur automation ka process jaan lete hain, bilkul layman language mein. 
 
-### DevOps Tools
+# DevOps Tools
 
 #### Docker
 - **Kya hai?**: Docker ek tool hai jo applications ko containerize karta hai, matlab aapke application aur uske dependencies ko ek container mein pack kar deta hai. Isse application har jagah same tarah se chalti hai.
@@ -250,7 +250,7 @@ Bilkul, chalo hum step-by-step in sab tools ko samjhte hain aur unka setup aur a
 - **Setup kaise kare?**: GitHub ya Jenkins mein webhook configure karo jo specified URL ko call karta hai.
 - **Automate kaise kare?**: Webhook use karke build ya deployment trigger kar sakte ho.
 
-### AWS Tools
+# AWS Tools
 
 #### EC2
 - **Kya hai?**: EC2 (Elastic Compute Cloud) AWS ka virtual server service hai.
@@ -327,7 +327,7 @@ Bilkul, chalo hum step-by-step in sab tools ko samjhte hain aur unka setup aur a
 
 ----------------------------------------------------------------
 
-- #### **In sab tools ko automate karne ke liye aap scripting languages jaise Bash YAML aur Python use kar sakte ho**
+- # **In sab tools ko automate karne ke liye aap scripting languages jaise Bash YAML aur Python use kar sakte ho**
 
 ### Docker
 - **Language for Automation**: Shell scripting (Bash), Python
