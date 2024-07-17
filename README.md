@@ -1,5 +1,6 @@
 # DevOps-sheet
-- Author: HackBugs (YouTube Channel)
+- Author: HackBugs (YouTube Channel
+- sudo apt-get install curl wget vim
 
 - wsl cmd
 - wsl --install
