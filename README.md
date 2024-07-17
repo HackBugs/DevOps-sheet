@@ -606,7 +606,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-# - Steps to Install and Use DevOps Tools inside Docker on Ubuntu:
+### - Steps to Install and Use DevOps Tools inside Docker on Ubuntu:
 
 - Vi Dockerfile - inside this file Paste this script
 ```sh
