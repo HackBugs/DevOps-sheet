@@ -1,13 +1,13 @@
 # DevOps-sheet
 - Author: HackBugs (YouTube Channel)
 
-wsl cmd
-wsl --install
-wsl --update
-wsl --list --verbose ya wsl -l -v:
-wsl -t "write name here NAME"
-wsl --shutdown
-wsl --system
+- wsl cmd
+- wsl --install
+- wsl --update
+- wsl --list --verbose ya wsl -l -v:
+- wsl -t "write name here NAME"
+- wsl --shutdown
+- wsl --system
 
 - Docker - Docker-Daemon
   - Docker images ubuntu, nginx, mysql, nodejs, oraclelinex, 
