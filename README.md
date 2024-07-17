@@ -42,32 +42,31 @@
   - exit
   - docker rm <container_id> -remove container
   - docker rm -f <container_id> -if you want to remove forcefully use -f
-
+  - ----------------------------------------------------------
   - Stop All Running Containers:
   - docker stop $(docker ps -q)
-
+  - ----------------------------------------------------------
   - Delete All Containers (Running and Stopped):
   - docker rm $(docker ps -a -q)
-
+  - ----------------------------------------------------------
   - We can use more cmd togethr with && here second comd
 ```sh
   - docker stop $(docker ps -q) && docker rm $(docker ps -a -q)
 ```
-
+  - ----------------------------------------------------------
   - Delete All Containers:
   - docker rm $(docker ps -a -q)
-
+  - ----------------------------------------------------------
   - Delete All Images:
   - docker rmi $(docker images -q)
-
+  - ----------------------------------------------------------
   - Optional Cleanup:
   - docker system prune -a
-
+  - ----------------------------------------------------------
   - systemctl status docker
   - systemctl start docker
-
+  - ----------------------------------------------------------
   - docker run -d ubuntu -if want to run in background
-
   - ----------------------------------------------------------
   - cd C:\my-website\
   - python -m http.server 8000
@@ -80,7 +79,7 @@
 docker run -it ubuntu
 apt-get update
 apt-get install nano
-
+- ----------------------------------------------------------
 - ls
 - mkdir my-directory
 - cd my-directory
@@ -90,7 +89,6 @@ apt-get install nano
 - docker stop <container_id>
 - docker start <container_id>
 - docker commit <container_id> my-ubuntu-image
-- 
 - docker login
 
 # Tool list which use in Devops
