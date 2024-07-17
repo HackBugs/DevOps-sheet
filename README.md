@@ -689,7 +689,7 @@ CMD ["node", "index.js"]
      docker build -t ansible-client .
      docker run -it ansible-client bash
 
-  8. **In Ubuntu and other Debian-based Linux distributions, `apt-get` is a command-line tool used for package management (installation, updating, and removal of software packages). Here are some useful commands and tips related to `apt-get`:
+  8. **In Ubuntu and other Debian-based Linux distributions, `apt-get` is a command-line tool used for package management (installation, updating, and removal of software packages). Here are some useful commands and tips related to `apt-get`:)**
 
 ### Installing Packages
 
