@@ -808,3 +808,88 @@ These commands help you manage packages effectively using `apt-get` on Ubuntu an
 
 ### Conclusion:
 Har DevOps tool ko Docker containers mein install karne ke liye aapko unke specific Dockerfiles create karna hoga aur fir un Dockerfiles ko build karke images ko run karna hoga. Docker containers use karke aap apne development environment ko isolated aur portable bana sakte hain, jo flexibility aur consistency provide karta hai across different environments.
+
+----------------------------------------------------------------
+
+### **Aap Docker container mein Ubuntu install karne ke baad uske andar kuch packages install karna chahte hain, toh aapko kuch basic steps follow karne padenge. Main aapko step-by-step batata hoon ki kaise aap Docker container ke andar packages install kar sakte hain.)**:
+
+### Step-by-Step Guide to Install Packages in a Docker Container
+
+1. **Docker Container Ko Start Karen**:
+   Sabse pehle aapko Docker container ko start karna hoga. Aap yeh command use kar sakte hain:
+
+   ```bash
+   docker run -it ubuntu
+   ```
+
+   Is command se ek new Ubuntu container start hoga aur aap uske interactive terminal mein aa jaayenge.
+
+2. **Update the Package List**:
+   Jab aap container ke andar hain, sabse pehle package list ko update karna zaroori hai:
+
+   ```bash
+   apt-get update
+   ```
+
+3. **Install a Package**:
+   Ab aap kisi bhi package ko install kar sakte hain. Example ke taur pe, agar aap `curl` install karna chahte hain, toh aap yeh command use kar sakte hain:
+
+   ```bash
+   apt-get install curl
+   ```
+
+   Aap kisi bhi package ka naam replace karke install kar sakte hain, jaise `vim`, `wget`, `python`, etc.
+
+### Example: Installing Multiple Packages in a Docker Container
+
+Suppose aapko curl, vim, aur git install karna hai. Aap yeh commands use karenge:
+
+```bash
+apt-get update
+apt-get install -y curl vim git
+```
+
+### Dockerfile ka Use karke Packages Install Karna
+
+Agar aap ek specific image banana chahte hain jisme required packages pre-installed ho, toh aap ek `Dockerfile` use kar sakte hain. Example ke liye, agar aap ek custom Ubuntu image create karna chahte hain jisme `curl`, `vim`, aur `git` installed hain:
+
+1. **Create a Dockerfile**:
+
+   Aap apne working directory mein ek `Dockerfile` create karen:
+
+   ```Dockerfile
+   # Use official Ubuntu as a parent image
+   FROM ubuntu:latest
+
+   # Update package list and install curl, vim, and git
+   RUN apt-get update && apt-get install -y \
+       curl \
+       vim \
+       git
+
+   # Set the working directory
+   WORKDIR /root
+
+   # Default command to run when starting the container
+   CMD ["bash"]
+   ```
+
+2. **Build the Docker Image**:
+
+   Ab aapko is Dockerfile se image build karni hogi:
+
+   ```bash
+   docker build -t custom-ubuntu .
+   ```
+
+   Ye command Dockerfile ke basis pe ek new image create karega jiska naam `custom-ubuntu` hoga.
+
+3. **Run the Docker Container**:
+
+   Ab aap apni custom image se container run kar sakte hain:
+
+   ```bash
+   docker run -it custom-ubuntu
+   ```
+
+Is tarah se aap apne Docker container ke andar packages install kar sakte hain aur custom Docker images create kar sakte hain.
