@@ -94,20 +94,20 @@ apt-get install nano
 
 # Tool list which use in Devops
 
-ansible vs terraform
-ansible vs puppet
-ansible vs jenkins
-ansible vs chef
-ansible vs terraform vs puppet vs chef
-ansible vs kubernetes
-ansible vs terraform tamil
-ansible vs ansible tower
-ansible vs terraform hindi
-ansible vs docker
-ansible vscode
-ansible vs helm
-ansible vs nixos
-ansible vs salt
+- ansible vs terraform
+- ansible vs puppet
+- ansible vs jenkins
+- ansible vs chef
+- ansible vs terraform vs puppet vs chef
+- ansible vs kubernetes
+- ansible vs terraform
+- ansible vs ansible tower
+- ansible vs terraform
+- ansible vs docker
+- ansible vscode
+- ansible vs helm
+- ansible vs nixos
+- ansible vs salt
 
 --------------------------------------------------
 
