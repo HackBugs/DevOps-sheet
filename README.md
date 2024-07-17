@@ -329,7 +329,7 @@ Grafana ko Ubuntu par install karne ke liye, niche diye gaye steps follow karein
 - **Application Monitoring**: Application metrics, response times, aur error rates.
 - **Business Analytics**: Sales data, customer analytics, aur operational metrics.
 
-Prometheus aur Grafana ka combination aapko real-time monitoring, performance analysis, aur proactive troubleshooting mein help karta hai. Agar aur kuch clarification ya details chahiye ho to bataiye!
+Prometheus aur Grafana ka combination aapko real-time monitoring, performance analysis, aur proactive troubleshooting mein help karta hai.
 
 #### Helm
 - **Kya hai?**: Helm ek package manager hai Kubernetes ke liye jo applications ko deploy karne mein madad karta hai.
