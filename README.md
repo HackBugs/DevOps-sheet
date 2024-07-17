@@ -48,7 +48,7 @@ wsl --system
   - Delete All Containers (Running and Stopped):
   - docker rm $(docker ps -a -q)
 
-  - We can use more cmd togethr with && here second comd
+  - We can use more cmd togethr with && here second comd 
   - docker stop $(docker ps -q) && docker rm $(docker ps -a -q)
 
   - Delete All Containers:
