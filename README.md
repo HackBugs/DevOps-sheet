@@ -1,8 +1,9 @@
 # DevOps-sheet
 - Author: HackBugs (YouTube Channel
+- -----------------------------------------
 - sudo apt-get install curl wget vim
 - WSL stands for Windows Subsystem for Linux
-
+- ----------------------------------------------
 - Install WSL
 ```sh
 wsl --install
