@@ -25,6 +25,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ```sh
 wsl --set-default-version 2
 ```
+------------------------------------------------
 - wsl cmd
 - wsl --install
 - wsl --update
