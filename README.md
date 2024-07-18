@@ -2,7 +2,23 @@
 - Author: HackBugs (YouTube Channel
 - sudo apt-get install curl wget vim
 - WSL stands for Windows Subsystem for Linux
+```sh
+Install WSL
+wsl --install
 
+Uninstall the current Ubuntu distribution:
+wsl --unregister Ubuntu
+
+Update WSL:
+wsl --update
+
+Enable and Configure WSL:
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+Set WSL to version 2:
+wsl --set-default-version 2
+```
 - wsl cmd
 - wsl --install
 - wsl --update
