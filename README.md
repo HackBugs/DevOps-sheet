@@ -1,6 +1,93 @@
 # DevOps-sheet
 - Author: HackBugs (YouTube Channel
-- -----------------------------------------
+
+### Here’s a list of DevOps tools categorized by their stages in the development and operations lifecycle, along with their ranking and historical context:
+
+### Developer Side
+
+**Plan**
+1. **Jira** - Highly ranked in 2024, widely used for agile project management.
+2. **Asana** - Popular for project management and collaboration.
+3. **Trello** - Used for simple project management and task tracking.
+
+**Code**
+1. **Git** - The most popular version control system in 2024.
+2. **GitHub** - Leading platform for hosting and reviewing code, collaborating on projects.
+3. **GitLab** - Gaining popularity for integrated CI/CD pipelines.
+4. **Bitbucket** - Used for code hosting and collaboration, integrated with Jira.
+
+**Build**
+1. **Maven** - Widely used build automation tool, especially for Java projects.
+2. **Gradle** - Popular for its flexibility and performance.
+3. **Ant** - Older tool, still in use in some legacy systems.
+4. **Bazel** - Increasingly popular for large codebases and its speed.
+
+**Test**
+1. **Selenium** - Popular for automated browser testing.
+2. **JUnit** - Widely used for Java unit testing.
+3. **TestNG** - Similar to JUnit but with more features and flexibility.
+4. **JUnit** - Widely used for Java unit testing.
+5. **Cucumber** - Popular for behavior-driven development (BDD) testing.
+6. **Jest** - Used for JavaScript testing, especially in React projects.
+
+### Operations Side
+
+**Deploy**
+1. **Jenkins** - Dominant CI/CD tool, widely used for automating deployments.
+2. **CircleCI** - Popular for its ease of use and speed.
+3. **Travis CI** - Commonly used in open-source projects.
+4. **Azure DevOps** - Integrated set of tools for CI/CD and more.
+5. **GitLab CI** - Increasingly popular for integrated CI/CD pipelines.
+
+**Operate**
+1. **Kubernetes** - Leading container orchestration tool in 2024.
+2. **Docker** - Widely used for containerization.
+3. **Ansible** - Popular for configuration management and automation.
+4. **Terraform** - Widely used for infrastructure as code (IaC).
+5. **Chef** - Still used, though losing ground to Ansible and Terraform.
+6. **Puppet** - Another older configuration management tool still in use.
+
+**Monitor**
+1. **Prometheus** - Leading monitoring and alerting toolkit.
+2. **Grafana** - Popular for visualization and monitoring.
+3. **Nagios** - Older tool, still in use for monitoring systems and networks.
+4. **Splunk** - Widely used for log management and monitoring.
+5. **New Relic** - Popular for application performance monitoring (APM).
+6. **Datadog** - Increasingly popular for cloud monitoring and APM.
+
+### Historical Context
+
+**Plan**
+- **Microsoft Project** - Previously popular for project management, less common in agile environments.
+
+**Code**
+- **Subversion (SVN)** - Previously widely used version control system before Git.
+- **Mercurial** - Another distributed version control system, overshadowed by Git.
+
+**Build**
+- **Make** - Older build tool, still used in some Unix-based projects.
+- **Rake** - Build automation tool for Ruby projects, less common now.
+
+**Test**
+- **JUnit** - Old but still very relevant in 2024.
+- **TestComplete** - Used in some legacy systems for automated testing.
+
+**Deploy**
+- **Hudson** - Predecessor to Jenkins, not widely used anymore.
+- **Bamboo** - CI/CD tool from Atlassian, less common compared to Jenkins and others.
+
+**Operate**
+- **CFEngine** - One of the oldest configuration management tools, largely replaced by newer tools.
+- **OpenStack** - Used for private cloud deployments, less popular with the rise of public cloud services.
+
+**Monitor**
+- **Zabbix** - Older monitoring tool, still in use in some environments.
+- **Cacti** - Another older monitoring tool, less common now.
+
+### Summary
+These tools are ranked based on their current market adoption and relevance in 2024, with some historical tools included for context. DevOps engineers should be familiar with both modern and older tools to understand the evolution of the field and to maintain legacy systems where necessary.
+--------------------------------------------------------------------------------------------------------------------------------
+
 - sudo apt-get install curl wget vim
 - WSL stands for Windows Subsystem for Linux
 - ----------------------------------------------
