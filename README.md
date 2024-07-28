@@ -11,13 +11,13 @@
 3. **Trello** - Used for simple project management and task tracking.
 
 **Code**
-1. **Git** - The most popular version control system in 2024.
-2. **GitHub** - Leading platform for hosting and reviewing code, collaborating on projects.
+1. `**Git**` - The most popular version control system in 2024.
+2. `**GitHub*`* - Leading platform for hosting and reviewing code, collaborating on projects.
 3. **GitLab** - Gaining popularity for integrated CI/CD pipelines.
 4. **Bitbucket** - Used for code hosting and collaboration, integrated with Jira.
 
 **Build**
-1. **Maven** - Widely used build automation tool, especially for Java projects.
+1. `**Maven**` - Widely used build automation tool, especially for Java projects.
 2. **Gradle** - Popular for its flexibility and performance.
 3. **Ant** - Older tool, still in use in some legacy systems.
 4. **Bazel** - Increasingly popular for large codebases and its speed.
@@ -33,24 +33,24 @@
 ### Operations Side
 
 **Deploy**
-1. **Jenkins** - Dominant CI/CD tool, widely used for automating deployments.
+1. `**Jenkins**` - Dominant CI/CD tool, widely used for automating deployments.
 2. **CircleCI** - Popular for its ease of use and speed.
 3. **Travis CI** - Commonly used in open-source projects.
 4. **Azure DevOps** - Integrated set of tools for CI/CD and more.
 5. **GitLab CI** - Increasingly popular for integrated CI/CD pipelines.
 
 **Operate**
-1. **Kubernetes** - Leading container orchestration tool in 2024.
-2. **Docker** - Widely used for containerization.
-3. **Ansible** - Popular for configuration management and automation.
-4. **Terraform** - Widely used for infrastructure as code (IaC).
-5. **Chef** - Still used, though losing ground to Ansible and Terraform.
-6. **Puppet** - Another older configuration management tool still in use.
+1. `**Kubernetes**` - Leading container orchestration tool in 2024.
+2. `**Docker**` - Widely used for containerization.
+3. `**Ansible**` - Popular for configuration management and automation.
+4. `**Terraform**` - Widely used for infrastructure as code (IaC).
+5. `**Chef**` - Still used, though losing ground to Ansible and Terraform.
+6. `**Puppet**` - Another older configuration management tool still in use.
 
 **Monitor**
 1. **Prometheus** - Leading monitoring and alerting toolkit.
 2. **Grafana** - Popular for visualization and monitoring.
-3. **Nagios** - Older tool, still in use for monitoring systems and networks.
+3. `**Nagios**` - Older tool, still in use for monitoring systems and networks.
 4. **Splunk** - Widely used for log management and monitoring.
 5. **New Relic** - Popular for application performance monitoring (APM).
 6. **Datadog** - Increasingly popular for cloud monitoring and APM.
