@@ -1,0 +1,21 @@
+Yeh updated cheatsheet hai, jismein har tool ke liye language aur main files bhi included hain, aur master aur node (client) ki information bhi di gayi hai:
+
+### **Tool Installation Cheatsheet**
+
+| **Tool**     | **Download Method**                                                        | **Download Command**                                                                                       | **Language**         | **Main Files**                       | **Master/Node**                     |
+|--------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|----------------------|-------------------------------------|-------------------------------------|
+| **Nagios**   | Tarball (archive file)                                                       | `wget https://github.com/NagiosEnterprises/nagioscore/releases/download/4.4.8/nagios-4.4.8.tar.gz`       | C/C++                | `nagios`, `nagios.cfg`               | Master & Nodes                      |
+| **Chef**     | `.deb` package                                                                | `wget https://packages.chef.io/files/stable/chef/17.11.13/ubuntu/20.04/chef_17.11.13-1_amd64.deb`       | Ruby                 | `chef-client`, `chef-solo`           | Master (Chef Server) & Nodes (Chef Client) |
+| **Jenkins**  | `.deb` package (for Debian-based systems)                                     | `wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -`<br> `sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary > /etc/apt/sources.list.d/jenkins.list'` | Java                 | `jenkins.war`, `jenkins`              | Master (Jenkins Server)             |
+| **Terraform**| Binary file (for Linux)                                                        | `wget https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_linux_amd64.zip`                    | Go                   | `terraform`                          | N/A (Single Binary)                 |
+| **Docker**   | Docker repository setup (no direct download needed)                          | `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`<br> `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"` | Go                   | `docker`, `docker-compose`           | Master (Docker Host) & Nodes (Containers) |
+| **Kubernetes**| Kubernetes packages (using `apt` commands)                                     | `curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -`<br> `sudo bash -c 'echo deb http://apt.kubernetes.io/ kubernetes-xenial main > /etc/apt/sources.list.d/kubernetes.list'` | Go                   | `kubelet`, `kubeadm`, `kubectl`      | Master (K8s Control Plane) & Nodes (K8s Nodes) |
+| **Ansible**  | Ansible package (using `apt` commands)                                         | `sudo apt update`<br> `sudo apt install ansible`                                                         | Python               | `ansible`, `ansible.cfg`             | Master (Ansible Control Machine) & Nodes (Managed Nodes) |
+
+### **Explanation:**
+
+- **Language**: Indicates the primary programming language used to develop the tool.
+- **Main Files**: Lists the key executable or configuration files associated with the tool.
+- **Master/Node**: Defines the roles where the tool is typically used. For instance, `Master` refers to the main server or control plane, and `Node` refers to the agents or clients.
+
+Agar aapko kisi aur tool ya topic ke baare mein aur information chahiye, toh batao!
