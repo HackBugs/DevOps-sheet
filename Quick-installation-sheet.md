@@ -1,4 +1,4 @@
-# 1. **Ansible**
+# ✍️ 1. **Ansible**
 1. **Update Ubuntu**:
    ```bash
    sudo apt update
@@ -165,7 +165,7 @@
    ```
    __________________________________________________________________________________________________________________________________________________________________________________________________________
 
-# 1. **Ansible**
+# ✍️ 1. **Ansible**
 
 **Installation Steps:**
 1. **Update your system:**
@@ -411,7 +411,7 @@ ________________________________________________________________________________
 
 Basic example of an import file and configuration setup for managing and operating all the tools mentioned. This file will include configurations for Ansible, Jenkins, Kubernetes, Terraform, Chef, Nagios, and Docker.
 
-# Example `setup.sh` Script
+# ✍️ Example `setup.sh` Script
 
 This script will help automate the setup process for all the tools. You'll need to run this script with `sudo` privileges on an Ubuntu machine.
 
