@@ -1037,3 +1037,104 @@ Agar aap ek specific image banana chahte hain jisme required packages pre-instal
    ```
 
 Is tarah se aap apne Docker container ke andar packages install kar sakte hain aur custom Docker images create kar sakte hain.
+
+<hr>
+
+Certainly! Here's a more comprehensive table that categorizes a wide range of DevOps tools, including 100 tools across different categories, their types, languages, approaches, and main files for code.
+
+| **Category**         | **Tool**                | **Type**            | **Language(s)**          | **Approach**                     | **Main File for Code**                      |
+|----------------------|-------------------------|---------------------|---------------------------|---------------------------------|---------------------------------------------|
+| **IaC**              | **Terraform**           | IaC                 | HCL, JSON                 | Declarative                      | `.tf` (Terraform configuration files)      |
+|                      | **Ansible**             | IaC                 | YAML                      | Declarative, Agentless           | `.yml` (Ansible playbooks)                 |
+|                      | **Chef**                | IaC                 | Ruby, DSL                 | Declarative, Client-Server       | `.rb` (Chef recipes)                      |
+|                      | **Puppet**              | IaC                 | Puppet DSL, Ruby          | Declarative, Client-Server       | `.pp` (Puppet manifests)                  |
+|                      | **SaltStack**           | IaC                 | Python                    | Declarative, Agent-based         | `.sls` (Salt states)                      |
+|                      | **CloudFormation**      | IaC                 | JSON, YAML                | Declarative                      | `.json`, `.yml` (CloudFormation templates) |
+|                      | **Pulumi**              | IaC                 | TypeScript, Python, Go   | Declarative, Imperative          | `.ts`, `.py`, `.go` (Pulumi code)         |
+|                      | **Juju**                | IaC                 | YAML                      | Declarative                      | `.yaml` (Juju charms)                     |
+|                      | **CDK**                 | IaC                 | TypeScript, Python        | Imperative                       | `.ts`, `.py` (CDK code)                   |
+|                      | **Vagrant**             | IaC                 | Ruby                      | Declarative                      | `Vagrantfile`                             |
+| **PaaS**             | **Heroku**              | PaaS                | Various (e.g., Ruby, Node.js) | Platform-managed                | Application code (varies by language)    |
+|                      | **Google App Engine**   | PaaS                | Various (e.g., Python, Java) | Platform-managed                | Application code (varies by language)    |
+|                      | **AWS Elastic Beanstalk** | PaaS               | Various (e.g., Java, .NET) | Platform-managed                | Application code (varies by language)    |
+|                      | **Microsoft Azure App Service** | PaaS          | Various (e.g., .NET, Node.js) | Platform-managed                | Application code (varies by language)    |
+|                      | **IBM Cloud Foundry**   | PaaS                | Various (e.g., Java, Node.js) | Platform-managed                | Application code (varies by language)    |
+|                      | **OpenShift**           | PaaS                | Various (e.g., Java, Node.js) | Platform-managed                | Application code (varies by language)    |
+|                      | **Engine Yard**         | PaaS                | Ruby                      | Platform-managed                | Application code (varies by language)    |
+|                      | **Jelastic**            | PaaS                | Various (e.g., PHP, Java) | Platform-managed                | Application code (varies by language)    |
+|                      | **Mendix**              | PaaS                | Various (e.g., Java, JavaScript) | Platform-managed                | Application code (varies by language)    |
+| **SaaS**             | **Jenkins**             | SaaS                | Java                      | CI/CD                            | `Jenkinsfile`                             |
+|                      | **GitHub**              | SaaS                | Git                       | Code Hosting, Version Control    | `.git` (Git repositories)                 |
+|                      | **GitLab**              | SaaS                | Git                       | Code Hosting, CI/CD              | `.git` (Git repositories)                 |
+|                      | **Bitbucket**           | SaaS                | Git                       | Code Hosting, CI/CD              | `.git` (Git repositories)                 |
+|                      | **Docker Hub**          | SaaS                | Dockerfile                | Container Registry               | `Dockerfile`                              |
+|                      | **Grafana**             | SaaS                | Go, JavaScript            | Monitoring and Visualization     | Configuration files (`.json`, `.yml`)    |
+|                      | **Prometheus**          | SaaS                | Go                        | Monitoring and Alerting          | Configuration files (`.yml`)             |
+|                      | **New Relic**           | SaaS                | Various                   | Monitoring and Performance       | Application code, configuration files    |
+|                      | **Datadog**             | SaaS                | Various                   | Monitoring and Performance       | Configuration files, metrics             |
+|                      | **Splunk**              | SaaS                | Various                   | Log Management and Analysis      | Configuration files, logs                |
+|                      | **Sumo Logic**          | SaaS                | Various                   | Log Management and Analysis      | Configuration files, logs                |
+|                      | **AWS CloudWatch**      | SaaS                | Various                   | Monitoring and Logging           | Configuration files, logs                |
+|                      | **Azure Monitor**       | SaaS                | Various                   | Monitoring and Logging           | Configuration files, logs                |
+|                      | **ServiceNow**          | SaaS                | Various                   | IT Service Management            | Configuration files, incident reports    |
+|                      | **Trello**              | SaaS                | N/A                       | Project Management               | Task boards, lists                       |
+|                      | **Slack**               | SaaS                | N/A                       | Communication                    | Messages, channels                       |
+|                      | **Zoom**                | SaaS                | N/A                       | Communication                    | Meetings, webinars                        |
+| **Containers**       | **Docker**              | Container           | Go, Shell                 | Containerization                 | `Dockerfile`                              |
+|                      | **Podman**              | Container           | Go                        | Containerization                 | `Containerfile`                           |
+|                      | **rkt**                 | Container           | Go                        | Containerization                 | `rkt` configuration files                |
+|                      | **LXC**                 | Container           | C                         | Containerization                 | Configuration files                       |
+|                      | **Docker Compose**      | Container           | YAML                      | Multi-container orchestration    | `docker-compose.yml`                     |
+| **Orchestration**    | **Kubernetes**          | Orchestration        | Go                        | Container Orchestration          | Configuration files (`.yml`, `.json`)    |
+|                      | **Docker Swarm**        | Orchestration        | Go                        | Container Orchestration          | Configuration files (`docker-compose.yml`) |
+|                      | **Apache Mesos**        | Orchestration        | Java, Scala               | Distributed Systems              | Configuration files                       |
+|                      | **Marathon**            | Orchestration        | Scala                     | Container Orchestration          | Configuration files                       |
+| **Monitoring & Logging** | **Elasticsearch**  | Monitoring & Logging | Java                      | Search and Analytics             | Configuration files                       |
+|                      | **Kibana**              | Monitoring & Logging | JavaScript                | Visualization                    | Configuration files                       |
+|                      | **Logstash**            | Monitoring & Logging | Java                      | Log Processing                   | Configuration files                       |
+|                      | **Fluentd**             | Monitoring & Logging | Ruby                      | Log Aggregation                  | Configuration files                       |
+| **Configuration Management** | **Consul**  | Configuration Management | Go                      | Service Discovery and Configuration | Configuration files                       |
+|                      | **Vault**               | Configuration Management | Go                      | Secret Management                | Configuration files                       |
+|                      | **etcd**                | Configuration Management | Go                      | Key-Value Store                   | Configuration files                       |
+|                      | **Chef Habitat**        | Configuration Management | Various (e.g., Ruby)      | Application Automation           | `.hb` (Habitat plan files)               |
+|                      | **Rancher**             | Configuration Management | Go                      | Container Management             | Configuration files                       |
+| **CI/CD**            | **Jenkins**             | CI/CD                | Java                      | Continuous Integration           | `Jenkinsfile`                             |
+|                      | **GitLab CI**           | CI/CD                | Git                       | Continuous Integration           | `.gitlab-ci.yml`                         |
+|                      | **CircleCI**            | CI/CD                | YAML                      | Continuous Integration           | `.circleci/config.yml`                   |
+|                      | **Travis CI**           | CI/CD                | YAML                      | Continuous Integration           | `.travis.yml`                             |
+|                      | **AWS CodePipeline**    | CI/CD                | Various                   | Continuous Integration           | Pipeline configuration files             |
+|                      | **Azure Pipelines**     | CI/CD                | YAML                      | Continuous Integration           | `azure-pipelines.yml`                    |
+|                      | **Bitbucket Pipelines** | CI/CD                | YAML                      | Continuous Integration           | `bitbucket-pipelines.yml`                |
+|                      | **TeamCity**            | CI/CD                | Java                      | Continuous Integration           | Configuration files                       |
+|                      | **Buildkite**           | CI/CD                | YAML                      | Continuous Integration           | Configuration files                       |
+| **Version Control**  | **Git**                 | Version
+
+ Control      | Git                       | Source Code Management           | `.git` (Git repositories)                |
+|                      | **SVN**                 | Version Control      | SVN                       | Source Code Management           | `.svn` (SVN repositories)                |
+|                      | **Mercurial**           | Version Control      | Mercurial                 | Source Code Management           | `.hg` (Mercurial repositories)           |
+| **Collaboration & Communication** | **Jira** | Collaboration       | Java                      | Issue Tracking                    | Configuration files                       |
+|                      | **Confluence**          | Collaboration       | Java                      | Documentation                    | Pages, spaces                             |
+|                      | **Asana**               | Collaboration       | N/A                       | Project Management               | Task boards, projects                    |
+|                      | **Monday.com**          | Collaboration       | N/A                       | Project Management               | Task boards, projects                    |
+|                      | **Notion**              | Collaboration       | N/A                       | Notes and Collaboration          | Notes, databases                          |
+| **Miscellaneous**    | **Terraform Cloud**     | IaC                 | HCL, JSON                 | Managed IaC                      | `.tf` (Terraform configuration files)      |
+|                      | **CloudBolt**           | Cloud Management     | Various                   | Cloud Cost Management            | Configuration files                       |
+|                      | **Red Hat OpenShift**   | PaaS                | Various (e.g., Java, Node.js) | Platform-managed                | Application code (varies by language)    |
+|                      | **Google Kubernetes Engine** | PaaS            | Various (e.g., Python, Go) | Platform-managed                | Kubernetes configuration files           |
+|                      | **AWS Fargate**         | PaaS                | N/A                       | Serverless Container Management  | Container configurations                  |
+
+This table includes various DevOps tools and categorizes them according to their type, language, approach, and where code is typically written or configured.
+
+### Declarative vs. Imperative
+
+**Declarative:**
+
+- **Focus on "What"**: Specifies the end state.
+- **Automation of Process**: The tool determines the steps to achieve the end state.
+- **Example**: "Ensure there are 3 replicas of this application running."
+
+**Imperative:**
+
+- **Focus on "How"**: Specifies the steps to achieve the end state.
+- **Manual Process**: You explicitly define each step needed to reach the desired state.
+- **Example**: "First, create a deployment. Then, scale it to 3 replicas."
