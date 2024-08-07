@@ -1109,7 +1109,7 @@ Certainly! Here's a more comprehensive table that categorizes a wide range of De
 |                      | **Buildkite**           | CI/CD                | YAML                      | Continuous Integration           | Configuration files                       |
 | **Version Control**  | **Git**                 | Version
 
- Control      | Git                       | Source Code Management           | `.git` (Git repositories)                |
+| Control      | Git                       | Source Code Management           | `.git` (Git repositories)                |
 |                      | **SVN**                 | Version Control      | SVN                       | Source Code Management           | `.svn` (SVN repositories)                |
 |                      | **Mercurial**           | Version Control      | Mercurial                 | Source Code Management           | `.hg` (Mercurial repositories)           |
 | **Collaboration & Communication** | **Jira** | Collaboration       | Java                      | Issue Tracking                    | Configuration files                       |
