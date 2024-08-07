@@ -1,5 +1,7 @@
 Categorized list of DevOps tools and their important Linux commands. This guide will help you understand what tools are used in DevOps and which Linux commands are important for each category.
 
+> sudo ufw allow 9090/tcp - allows firewall traffic on port 9090:
+
 ### 1. **Version Control**
    - **Git**
      - `git init` - Initialize a new Git repository
