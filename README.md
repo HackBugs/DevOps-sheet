@@ -1,7 +1,35 @@
 # DevOps-sheet
 - Author: HackBugs (YouTube Channel
 
-### Here’s a list of DevOps tools categorized by their stages in the development and operations lifecycle, along with their ranking and historical context:
+### DevOps tools categorized by their stages in the development and operations lifecycle, along with their ranking and historical context:
+
+Certainly! Here's the updated summary with the additional explanation of "Declarative vs. Imperative" at the bottom:
+
+| Tool             | Type                     | Language(s)                        | Approach            |
+|------------------|--------------------------|------------------------------------|---------------------|
+| **Ansible**      | Configuration Management | YAML                               | Push-based          |
+| **Puppet**       | Configuration Management | Puppet DSL                         | Pull-based          |
+| **Chef**         | Configuration Management | Ruby                               | Pull-based          |
+| **SaltStack**    | Configuration Management | YAML                               | Push-based / Pull-based |
+| **IaC - Terraform**    | Provisioning (IaC)       | HCL, JSON                          | Declarative         |
+| **IaC - CloudFormation**| Provisioning (IaC)       | JSON, YAML                         | Declarative         |
+| **IaC - Pulumi**       | Provisioning (IaC)       | Python, JavaScript, TypeScript, Go, C# | Declarative    |
+
+### Declarative vs. Imperative
+
+**Declarative:**
+
+- **Focus on "What"**: Specifies the end state.
+- **Automation of Process**: The tool determines the steps to achieve the end state.
+- **Example**: "Ensure there are 3 replicas of this application running."
+
+**Imperative:**
+
+- **Focus on "How"**: Specifies the steps to achieve the end state.
+- **Manual Process**: You explicitly define each step needed to reach the desired state.
+- **Example**: "First, create a deployment. Then, scale it to 3 replicas."
+
+<hr>
 
 ### Developer Side
 
@@ -86,11 +114,14 @@
 
 ### Summary
 These tools are ranked based on their current market adoption and relevance in 2024, with some historical tools included for context. DevOps engineers should be familiar with both modern and older tools to understand the evolution of the field and to maintain legacy systems where necessary.
---------------------------------------------------------------------------------------------------------------------------------
+
+<hr>
 
 - sudo apt-get install curl wget vim
 - WSL stands for Windows Subsystem for Linux
-- ----------------------------------------------
+
+<hr>
+
 - Install WSL
 ```sh
 wsl --install
@@ -112,7 +143,9 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ```sh
 wsl --set-default-version 2
 ```
-------------------------------------------------
+
+<hr>
+
 - wsl cmd
 - wsl --install
 - wsl --update
